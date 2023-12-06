@@ -80,3 +80,6 @@ Dockerfile is like a new computer, doesnt have anything at all. Base image is th
 - To execute the Dockerfile and create an image, run:
 docker build -t {docker-id}/{project-name:tag} {directory}
 (eg: docker build -t thenewboston/bucky-redis . )
+
+## NOTE
+- any code changes require you to rebuild the image, and run the container again, as the old image contains configurations of previous versions.
