@@ -8,6 +8,11 @@ Experimenting with Docker
 # **Image (read-only)**
 - contains a set of instructions that create a container
 - can be pulled from **Docker Hub - Github but for docker images**
+- consists of several layers
+	- parent image
+	- sources
+	- dependencies
+	- run commands
 
 # **Docker Server (Daemon)**
 - background process that can create images and run containers
