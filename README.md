@@ -57,18 +57,18 @@ Experimenting with Docker
 (eg: dc exec -it {new-cont-name} {command, eg: redis-cli} )
 
 ## 2. Dockerfile
-- Create a Dockerfile, these are the contents:
-FROM {base-image}
-COPY {source} {dest}
-ADD {source} {dest}
-RUN {command}
-CMD \["{initialize command}'']
-\# This is a comment
+- Create a Dockerfile, these are the contents:  
+FROM {base-image}  
+COPY {source} {dest}  
+ADD {source} {dest}  
+RUN {command}  
+CMD \["{initialize command}'']  
+\# This is a comment  
 
-eg:
-FROM alphine:latest
-RUN apk add --update redis 
-CMD \["redis-server"]
+eg:  
+FROM alphine:latest  
+RUN apk add --update redis   
+CMD \["redis-server"]  
 
 Dockerfile is like a new computer, doesnt have anything at all. Base image is the OS to install. RUN will execute the command on top of the base image, usually to install dependencies. CMD will initialize and activate those dependencies. Difference between COPY and ADD is ADD can also unpack .tar files and retrieve data from the internet, these can be sources.
 
