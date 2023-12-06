@@ -67,7 +67,7 @@ FROM {base-image}
 COPY {source} {dest}  
 ADD {source} {dest}  
 RUN {command}  
-CMD \["{initialize command}'']  
+CMD \["{initialize command}"]  
 \# This is a comment  
 
 eg:  
