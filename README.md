@@ -83,10 +83,10 @@ Dockerfile is like a new computer, doesnt have anything at all. Base image is th
 - any code changes require you to rebuild the image, and run the container again, as the old image contains configurations of previous versions.
 
 # docker-compose.yaml
-### - **Command:**    **docker-compose up**
+### - **Command:**    **docker compose up**
 - When running, it first locates the **build** of **each service**, then it will find the **Dockerfile** in those build paths and use them to build **images for each service**
 - Then, it automatically runs the created images to create containers, the containers are configured based on the properties and values stated in the .yaml file\
-### - **Command:**    **docker-compose down**
+### - **Command:**    **docker compose down**
 - Stops and deletes all containers, but images and volumes will remain
 - **--rmi all**   (deletes all images)
 - **-v**    (deletes volumes)
