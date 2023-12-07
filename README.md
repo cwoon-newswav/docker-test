@@ -75,8 +75,8 @@ CMD \["redis-server"]
 
 Dockerfile is like a new computer, doesnt have anything at all. Base image is the OS to install. RUN will execute the command on top of the base image, usually to install dependencies. CMD will initialize and activate those dependencies. Difference between COPY and ADD is ADD can also unpack .tar files and retrieve data from the internet, these can be sources.
 
-- To execute the Dockerfile and create an image, run:
-**docker build -t {project-name}:{tag} {directory}**
+- To execute the Dockerfile and create an image, run:  
+**docker build -t {project-name}:{tag} {directory}**  
 (eg: docker build -t thenewboston/bucky-redis . )
 
 ## NOTE
