@@ -89,7 +89,8 @@ Dockerfile is like a new computer, doesnt have anything at all. Base image is th
 # docker-compose.yaml
 ```docker compose up```
 - When running, it first locates the **build** of **each service**, then it will find the **Dockerfile** in those build paths and use them to build **images for each service**
-- Then, it automatically runs the created images to create containers, the containers are configured based on the properties and values stated in the .yaml file\
+- Then, it automatically runs the created images to create containers, the containers are configured based on the properties and values stated in the .yaml file
+
 ```docker compose down```
 - Stops and deletes all containers, but images and volumes will remain
 - **--rmi all**   (deletes all images)
